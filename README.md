@@ -98,4 +98,9 @@ Groups should edit this file and add their group name, members, and github URL t
 * Team Members: Amaro Silva ([@zaga_silva](https://twitter.com/zaga_silva)), Anabela Carvalho, Tiago Andrade, André Rodrigues, João Estevinho, Ricardo Silva
 * Project (Github) URL: https://github.com/anabelitah/mads-p1
 
+## Night Shift Group 6
+
+* Team Members: Nuno Matos ([@nuno__matos](https://twitter.com/nuno__matos)), Carlos Gouveia, Ricardo Graça([@ricardogsgraca](https://twitter.com/ricardogsgraca)), José Silva ([@pachipt](https://twitter.com/pachipt)), Aline Gonçalves ([@S2AlineS2](https://twitter.com/S2AlineS2)), Pedro Lemos ([@pedrohslemos](https://twitter.com/pedrohslemos))
+* Project (Github) URL: https://github.com/nunommatos/mads-p1.git
+
 ## ...
