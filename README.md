@@ -88,5 +88,9 @@ Groups should edit this file and add their group name, members, and github URL t
 * Team Members: Filipe Carvalho, Joana Barbosa, Luís Dias, Pedro Machado, Tiago Casanova
 * Project (Github) URL: https://github.com/tiagocasanovapt/mads-p1.git
 
+## Night Shift Group 4
+
+* Team Members: João Figueiredo ([@lucalanca](https://twitter.com/lucalanca)), Tiago Varela ([@tiagovarela](https://twitter.com/tiagovarela)), Joel Ferreira ([@joelfferreira](https://twitter.com/joelfferreira)), Pedro Pontes ([@pedrotiagopontes](https://twitter.com/pedrotiagopontes)), João Correia
+* Project (Github) URL: https://github.com/lucalanca/mads-p1.git
 
 ## ...
