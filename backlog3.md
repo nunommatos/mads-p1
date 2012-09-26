@@ -13,7 +13,7 @@ New surveys have discovered that rocks also tend to be slippery when standing on
     # x #  =>  # x*#
     #####      #####
 
-## 3. "Rocks Fusion"
+## 3. "Rock Fusion"
 
 Whenever two rocks fall, they may crash into each other, and (by yet unknown physical phenomenae) fuse into a single rock. Here's an example:
 
