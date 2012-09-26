@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FileReadTest {
+
+	FileRead maptest;
+	
+	public void test() {
+		maptest = new FileRead();
+	}
+
+}

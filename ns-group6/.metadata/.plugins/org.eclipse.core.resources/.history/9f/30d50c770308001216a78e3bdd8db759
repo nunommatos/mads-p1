@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.ArrayList;
+class FileRead 
+{
+   public static void main(String args[])
+	{
+	  ArrayList<ArrayList<String>> map= new ArrayList<ArrayList<String>>();
+      try{
+		// Open the file that is the first 
+		// command line parameter
+		FileInputStream fstream = new FileInputStream("example1.map");
+		// Get the object of DataInputStream
+		DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		String strLine;
+		//Read File Line By Line
+		while ((strLine = br.readLine()) != null) 	{
+			// Print the content on the console
+			ArrayList<String> temp = new ArrayList<String>();
+			for(int a=0; a < strLine.length();a++){
+				temp.add(Character.toString(strLine.charAt(a)));
+			}
+			map.add(temp);
+			System.out.println (map);
+		}
+		//Close the input stream
+		in.close();
+		}catch (Exception e){//Catch exception if any
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+}
+

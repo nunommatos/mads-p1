@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FileReadTest {
+
+	String map = "[[#, #, #, #, #, #], [#, .,  , *, R, #], [#,  ,  , x, ., #], [#, x,  , *,  , #], [L,  ,  , ., x, #], [#, #, #, #, #, #]]";
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
