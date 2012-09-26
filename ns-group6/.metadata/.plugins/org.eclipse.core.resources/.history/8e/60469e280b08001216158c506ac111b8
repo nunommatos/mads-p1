@@ -43,8 +43,8 @@ class Game
 					diamond++;
 				}
 				if(strLine.charAt(a) == 'R'){
-					robotx = a+1;
-					roboty = map.size()+1;
+					robotx = a;
+					roboty = map.size();
 				}
 			}
 			map.add(temp);

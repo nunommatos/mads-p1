@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class GameTest {
+
+	@Test
+	public void test() {
+		Game map = new Game();
+		assertEquals("[[#, #, #, #, #, #], [#, .,  , *, R, #], [#,  ,  , x, ., #], [#, x,  , *,  , #], [L,  ,  , ., x, #], [#, #, #, #, #, #]]", map.FileRead());
+		assertEquals(3,map.diamond);
+	}
+
+}

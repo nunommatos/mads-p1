@@ -4,11 +4,13 @@ class Game
 {
 	static int diamond = 0;
 	static ArrayList<ArrayList<String>> map= new ArrayList<ArrayList<String>>();
-	static int robotx;
-	static int roboty;
 	
-	public String getMap() {
-		return map.toString();
+	public ArrayList<ArrayList<String>> getMap() {
+		return map;
+	}
+
+	public void setMap(ArrayList<ArrayList<String>> map) {
+		this.map = map;
 	}
 
 	public int getDiamond() {
@@ -42,15 +44,10 @@ class Game
 				if(strLine.charAt(a) == 'x'){
 					diamond++;
 				}
-				if(strLine.charAt(a) == 'R'){
-					robotx = a+1;
-					roboty = map.size()+1;
-				}
 			}
 			map.add(temp);
 			System.out.println (map);
 			System.out.println ("diamond:"+diamond);
-			System.out.println ("Robot:"+robotx+""+roboty);
 		}
 		//Close the input stream
 		in.close();

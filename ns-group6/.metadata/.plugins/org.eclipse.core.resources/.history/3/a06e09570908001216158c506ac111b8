@@ -8,8 +8,7 @@ public class GameTest {
 	@Test
 	public void test() {
 		Game map = new Game();
-		Game.FileRead();
-		assertEquals("[[#, #, #, #, #, #], [#, .,  , *, R, #], [#,  ,  , x, ., #], [#, x,  , *,  , #], [L,  ,  , ., x, #], [#, #, #, #, #, #]]", map.getMap());
+		assertEquals("[[#, #, #, #, #, #], [#, .,  , *, R, #], [#,  ,  , x, ., #], [#, x,  , *,  , #], [L,  ,  , ., x, #], [#, #, #, #, #, #]]", map.FileRead());
 		assertEquals(3,map.getDiamond());
 	}
 
