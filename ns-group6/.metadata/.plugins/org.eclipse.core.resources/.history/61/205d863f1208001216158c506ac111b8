@@ -1,0 +1,127 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+class Game
+{
+	static int diamond = 0;
+	static ArrayList<ArrayList<String>> map= new ArrayList<ArrayList<String>>();
+	static int robotx;
+	static int roboty;
+	
+	public String getMap() {
+		return map.toString();
+	}
+
+	public int getDiamond() {
+		return diamond;
+	}
+
+	public static void setDiamond(int diamond) {
+		Game.diamond = diamond;
+	}
+
+	public static void main(String[] args){
+		FileRead();
+		moveLeft();
+	}
+   
+	public static void FileRead()
+	{
+      try{
+		// Open the file that is the first 
+		// command line parameter
+		FileInputStream fstream = new FileInputStream("example1.map");
+		// Get the object of DataInputStream
+		DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		String strLine;
+		//Read File Line By Line
+		while ((strLine = br.readLine()) != null) 	{
+			// Print the content on the console
+			ArrayList<String> temp = new ArrayList<String>();
+			for(int a=0; a < strLine.length();a++){
+				temp.add(Character.toString(strLine.charAt(a)));
+				if(strLine.charAt(a) == 'x'){
+					diamond++;
+				}
+				if(strLine.charAt(a) == 'R'){
+					robotx = a;
+					roboty = map.size();
+				}
+			}
+			map.add(temp);
+			System.out.println (map);
+			System.out.println ("diamond:"+diamond);
+			System.out.println ("Robot:"+robotx+""+roboty);
+		}
+		//Close the input stream
+		in.close();
+		}catch (Exception e){//Catch exception if any
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+	
+	public static void moveLeft(){
+		System.out.println(map.get(roboty).get(robotx-1));
+		if(map.get(roboty).get(robotx-1).equals("*"))
+		{
+			robotx=robotx-1;
+			map.get(roboty).set(robotx+1, " ");
+			map.get(roboty).set(robotx, " ");
+			System.out.println(map);
+		}
+		
+	}
+	
+	/*public static void menu() {
+		Scanner in = new Scanner(System.in);
+		// print menu
+
+		System.out.println("L. Move Left:");
+		System.out.println("R. Move Right:");
+		System.out.println("U. Move Up:");
+		System.out.println("D. Move Down:");
+		System.out.println("W. Wait:");
+
+		// handle user commands
+		boolean quit = false;
+		String menuItem;
+		do {
+			System.out.print("Option: ");
+			menuItem = in.next().toUpperCase();
+			switch (menuItem) {
+			case "L":
+				// nome da funcao
+				if (!moveLeft())
+					;
+				System.out.println("Invalid move");
+				break;
+			case "R":
+				// nome da funcao
+				if (!moveRight())
+					;
+				System.out.println("Invalid move");
+				break;
+			case "U":
+				// nome da funcao
+				if (!moveUp())
+					;
+				System.out.println("Invalid move");
+				break;
+			case "D":
+				// nome da funcao
+				if (!moveDown())
+					;
+				System.out.println("Invalid move");
+				break;
+			case "W":
+				// nome da funcao
+				mwait();
+				break;
+			default:
+				System.out.println("Invalid choice.");
+			}
+		} while (!quit);
+	}*/
+}
+
